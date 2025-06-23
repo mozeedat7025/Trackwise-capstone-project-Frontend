@@ -241,7 +241,7 @@ font-weight: bold;
 
 
 /* Responsive (mobile) */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f4f9f9;
