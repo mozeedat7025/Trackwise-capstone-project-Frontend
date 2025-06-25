@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9f9;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 5;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    padding: 30px;
+    border-radius: 0;
+    gap: 40px;
+    /* justify-content: space; */
+    /* min-height: 100%;
+
+    background-color:#D5EFED;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    /* flex-direction: row;*/
+}
+
+.left-panel{
+    background-color: white;
+}
+
+.left-panel {
+    /* flex: 1;
+    width: 50%; */
+    /* background-color: #D5EFED;
+    /* display: flex; */
+    align-items:center;
+    justify-content:center;
+    /* flex-direction: column; */
+    /* padding: 35px; */
+    text-align: center; 
+}
+
+.left-panel .img-container{
+    padding: 12px;
+    overflow: hidden;
+}
+
+.left-panel  .img-container img {
+
+ align-items: flex-end;
+ justify-content: center;
+ padding: 33px 25px;
+ background-color: #fff;
+ height: 400px;
+ width: 100%;
+}
+
+.message-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.message-box p{
+   color: rgb(90, 89, 89);
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dots{
+    width: 30px;
+    height: 3px;
+    background-color: #d6f2ef;
+    border-radius: 2px;
+    opacity: 0.6;
+}
+
+.dot.active{
+    background-color: #000;
+    opacity: 1;
+}
+
+
+/* .Right-panel {
+    flex: 1;
+    width: 100%;
+    padding: 40px, 30px;
+    align-items: center;
+    display:flex;
+    justify-content:center;
+    border: 2px solid black;
+   
+} */
+
+.form-box {
+    /* background-color: #fff; */
+    padding:12px;
+    width: 50%;
+    max-width:450px;
+/*  */
+    border-radius: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+#trackID{
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+}
+
+.form-box .track-wise img{
+    /* width: auto; */
+    position: relative;
+    width: 180px;
+    top: 0;
+   
+}
+
+.track-wise{
+     margin:12px auto;
+    width: 140px;
+
+}
+
+
+
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Welcome-text{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+/*Form*/
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    padding: 22px;
+   
+}
+.track-form h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.track-form h4{
+    font-size: 17px;
+}
+
+.track-form a{
+    color: black;
+    text-decoration: none;
+    color:  #00a89d;
+    font-size: 20px;
+    font-family:url(fonts/Poppins-Bold.ttf)
+}
+
+label{
+    margin-top: 10px;
+    text-align: start;
+    font-size: 14px;
+}
+
+input{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.forgot{
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+}
+ .btn-form {
+    padding: 12px ;
+    background-color: #00a89d ;
+    color: #fff ;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor:pointer ;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: #008a7d ;
+}
+
+.signup-text {
+    margin-top: 20px;
+    text-align: center ;
+    font-size: 14px;
+}
+
+.signup-text a {
+color: #009688;
+text-decoration: none;
+font-weight: bold;
+}
+
+.btn1-foot{
+    padding: 22px;
+}
+
+.btn1-foot button{
+    width: 21%;
+    /*background-color: transparent; */
+}
+
+.btn1-foot .btnID{
+    background-color: #009688;
+    border-radius: 5px;
+}
+
+
+
+/* Responsive (mobile) */
+@media screen and (max-width: 768px) {
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9f9;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 1px;
+    gap: 0;
+    align-items: center;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 0;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.left-panel  .img-container img {
+ align-items: flex-start;
+ justify-content: center;
+ padding: 0;
+ background-color: #fff;
+ height: auto;
+ width: 100%;
+}
+
+.left-panel .img-container{
+    padding: 5px;
+    overflow: auto;
+}
+    .left-panel,
+    .right-panel {
+        padding: 11px;
+    }
+
+  .left-panel {
+    align-items:center;
+    justify-content:center;
+    text-align: center; 
+}
+ 
+    .message-box{
+        padding: 12px;
+        margin-top: 22px;
+    }
+    .message-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    /* text-wrap: nowrap; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 7px;
+}
+.message-box p{
+    font-size: 14px;
+   color: rgb(90, 89, 89);
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+   
+}
+    
+.form-box {
+    padding:1px;
+    width: 100%;
+    max-width:auto;
+    border-radius: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-box .track-wise img{
+    position: relative;
+    width: 160px;
+    top: 0;
+   
+}
+
+.track-wise{
+     margin:14px auto;
+    width: auto;
+    text-align: center;
+
+}
+
+
+.btn1-foot{
+    padding: 22px;
+}
+
+.btn1-foot button{
+    width: 21%;
+    /*background-color: transparent; */
+}
+
+.btn1-foot .btnID{
+    background-color: #009688;
+    border-radius: 5px;
+}
+
+}
